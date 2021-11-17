@@ -7,7 +7,9 @@ position:relative;
 display:flex;
 justify-content:space-between;
 background: url(${props => props.back}) 50%;
+background-repeat:no-repeat;
 background-size:cover;
+background-position: 50% 100%
 
 `
 export const Ul = styled.ul`
@@ -35,12 +37,18 @@ justify-content:center;
 color: #363636;
 `
 export const Box = styled.div`
-border:solid 4px gray;
+border:solid 4px black;
 width:10vw;
 height:7vh;
 display:flex;
 justify-content:center;
 align-items:center;
+:hover{
+    cursor: pointer;
+    background-color:#FF0000;
+    color:white;
+    opacity:40%;
+}
 `
 
 export const Item = styled.div`
@@ -51,11 +59,10 @@ color: #333;
 }
 `
 export const Title = styled.div`
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: 'Roboto Mono', monospace;
 color: #333;
 position:absolute;
 left:38%;
-top:50%;
+top:29%;
 font-size:4vw;
 `
